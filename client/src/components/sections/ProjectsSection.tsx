@@ -77,7 +77,7 @@ export default function ProjectsSection() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="diagonal-section bg-dark py-20 lg:py-32 relative" style={{ clipPath: "polygon(0 0, 100% 5%, 100% 95%, 0 100%)" }}>
         <div className="container mx-auto px-6 lg:px-12">
@@ -127,7 +127,7 @@ export default function ProjectsSection() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: true, amount: 0.1 }}
           >
             {filteredProjects.map((project, index) => (
               <ProjectCard 

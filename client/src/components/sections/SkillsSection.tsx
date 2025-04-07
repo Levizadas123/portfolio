@@ -50,7 +50,7 @@ export default function SkillsSection() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="container mx-auto px-6 lg:px-12">
         <motion.div 
@@ -107,7 +107,7 @@ export default function SkillsSection() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {statsData.map((stat, index) => (
             <Stat 

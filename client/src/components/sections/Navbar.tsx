@@ -35,19 +35,17 @@ export default function Navbar() {
 
   return (
     <motion.nav 
-      className={`fixed w-full z-50 px-6 lg:px-12 py-6 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-4" : ""
+      className={`fixed w-full z-50 px-6 lg:px-12 py-4 transition-all duration-300 top-0 left-0 ${
+        scrolled ? "bg-white shadow-md" : ""
       }`}
       variants={navVariants}
       initial="hidden"
       animate="show"
     >
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/">
-          <a className="text-2xl font-heading font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            PORTFOLIO
-          </a>
-        </Link>
+        <div className="text-2xl font-heading font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          PORTFOLIO
+        </div>
         
         <div className="hidden md:flex space-x-8">
           <NavLink href="#projects">Projetos</NavLink>

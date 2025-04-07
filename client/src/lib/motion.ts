@@ -2,7 +2,7 @@
 export const navVariants = {
   hidden: {
     opacity: 0,
-    y: -50,
+    y: -20,
     transition: {
       type: "spring",
       stiffness: 300,
@@ -14,8 +14,8 @@ export const navVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 80,
-      delay: 0.1,
+      stiffness: 120,
+      delay: 0,
     },
   },
 };
@@ -62,15 +62,15 @@ export const staggerContainer = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
+      staggerChildren: 0.05,
+      delayChildren: 0.1,
     },
   },
 };
 
 export const textVariant = (delay: number) => ({
   hidden: {
-    y: 50,
+    y: 30,
     opacity: 0,
   },
   show: {
@@ -78,16 +78,16 @@ export const textVariant = (delay: number) => ({
     opacity: 1,
     transition: {
       type: "spring",
-      duration: 1.25,
-      delay,
+      duration: 0.8,
+      delay: delay * 0.5,
     },
   },
 });
 
 export const fadeIn = (direction: string, type: string, delay: number, duration: number) => ({
   hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+    y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
     opacity: 0,
   },
   show: {
@@ -96,8 +96,8 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
     opacity: 1,
     transition: {
       type,
-      delay,
-      duration,
+      delay: delay * 0.5, // reduzindo delay
+      duration: duration * 0.8, // reduzindo duração
       ease: "easeOut",
     },
   },
@@ -105,7 +105,7 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
 
 export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
-    scale: 0,
+    scale: 0.5,
     opacity: 0,
   },
   show: {
@@ -113,8 +113,8 @@ export const zoomIn = (delay: number, duration: number) => ({
     opacity: 1,
     transition: {
       type: "tween",
-      delay,
-      duration,
+      delay: delay * 0.5,
+      duration: duration * 0.7,
       ease: "easeOut",
     },
   },

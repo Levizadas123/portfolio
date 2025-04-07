@@ -10,7 +10,7 @@ export default function Footer() {
       variants={fadeIn("up", "tween", 0.2, 1)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center">

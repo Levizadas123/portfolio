@@ -76,7 +76,7 @@ export default function ContactSection() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="absolute top-1/3 -left-32 w-96 h-96 rounded-full bg-primary opacity-20 blur-[60px]"></div>
       <div className="absolute bottom-1/3 -right-32 w-96 h-96 rounded-full bg-secondary opacity-20 blur-[60px]"></div>

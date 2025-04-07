@@ -17,7 +17,7 @@ export default function Home() {
     <motion.div
       initial="hidden"
       animate="show"
-      variants={fadeIn}
+      variants={fadeIn("up", "tween", 0, 0.3)}
       className="overflow-x-hidden"
     >
       {/* Custom Cursor */}

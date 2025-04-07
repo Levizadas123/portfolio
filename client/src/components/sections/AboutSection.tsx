@@ -12,7 +12,7 @@ export default function AboutSection() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.1 }}
       onMouseMove={handleMouseMove}
     >
       <div className="absolute top-1/3 -right-32 w-96 h-96 rounded-full bg-accent opacity-20 blur-[60px]"></div>
