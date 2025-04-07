@@ -1,48 +1,55 @@
 # Portfólio Moderno e Interativo
 
-Um portfólio profissional moderno, visualmente impressionante e "fora da caixa", com elementos de design extraordinários e animações fluidas.
+Um portfólio web profissional e moderno, desenvolvido com React, TypeScript, e Express. O projeto apresenta animações fluidas, efeitos visuais modernos e uma interface atraente.
 
 ## Características
 
-- ✨ Design moderno e visualmente impactante
-- 🎭 Animações suaves e interatividade
-- 🧩 Elementos de UI personalizados e avançados
-- 📱 Totalmente responsivo para todos os dispositivos
-- 🌐 Seções organizadas para projetos, habilidades e contato
-- 🔄 Efeitos de parallax e efeitos visuais
-- 🎨 Estilização personalizada com Tailwind CSS
-- 🚀 Implementado com React e TypeScript
+- **Design Moderno**: Layout atual e elegante com elementos visuais impressionantes
+- **Animações Suaves**: Transições e movimentos fluidos para uma experiência de usuário envolvente
+- **Totalmente Responsivo**: Adaptado para dispositivos móveis, tablets e desktops
+- **Seções Completas**: Apresentação, Projetos, Experiência, Habilidades e Contato
+- **Efeitos Especiais**: Cursor personalizado, efeitos de partículas e paralaxe
+- **Formulário de Contato**: Sistema de contato funcional com validação
 
-## Seções
+## Tecnologias Utilizadas
 
-- **Hero** - Introdução com efeitos de partículas
-- **Projetos** - Portfolio com filtros por categoria
-- **Sobre** - Informações pessoais e profissionais
-- **Habilidades** - Competências técnicas com indicadores visuais
-- **Experiência** - Timeline com histórico profissional
-- **Contato** - Formulário de contato funcional
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui, Radix UI
+- **Animações**: Framer Motion
+- **Backend**: Express
+- **Validação**: Zod, React Hook Form
+- **Gerenciamento de Estado**: TanStack Query
 
-## Tecnologias
+## Como Executar
 
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion (animações)
-- Node.js/Express (backend para formulário de contato)
+1. Clone o repositório
+2. Instale as dependências:
+   ```
+   npm install
+   ```
+3. Execute o servidor de desenvolvimento:
+   ```
+   npm run dev
+   ```
+4. Abra o navegador em `http://localhost:3000`
 
-## Instalação
+## Estrutura do Projeto
 
-```bash
-# Instalar dependências
-npm install
+- `/client`: Código frontend React
+  - `/src/components`: Componentes da UI 
+  - `/src/pages`: Páginas da aplicação
+  - `/src/hooks`: Custom hooks
+  - `/src/lib`: Utilitários e configurações
+- `/server`: Código backend Express
+- `/shared`: Esquemas e tipos compartilhados
 
-# Iniciar em modo desenvolvimento
-npm run dev
-```
+## Personalização
 
-## Implementações Futuras
+Você pode personalizar facilmente:
+- Cores e tema no arquivo `theme.json`
+- Conteúdo das seções nos respectivos componentes
+- Projetos e experiências editando os arrays de dados
 
-- Modo escuro/claro
-- Internacionalização (múltiplos idiomas)
-- Blog integrado
-- Integração com CMS para gerenciamento de projetos
+## Licença
+
+[MIT](LICENSE)
